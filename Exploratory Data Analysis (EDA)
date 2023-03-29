@@ -1,0 +1,6 @@
+import numpy as np
+import pandas as pd
+
+train_df = pd.read_csv('Corona_NLP/Corona_NLP_train.csv', encoding = "latin1")
+
+## Data Profiling
