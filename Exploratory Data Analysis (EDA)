@@ -3,4 +3,25 @@ import pandas as pd
 
 train_df = pd.read_csv('Corona_NLP/Corona_NLP_train.csv', encoding = "latin1")
 
-## Data Profiling
+# Data Profiling
+
+# Checking data size
+print(f'Train data size: {train_df.size}')
+
+# Checking data shape
+print(f'Train data shape: {train_df.shape}')
+
+# Viewing the data
+train_df.head()
+
+# Checking data types
+print(f'Train data type: {train_df.dtypes}')
+
+# Summarizing the data
+train_df.describe(include='all')
+
+# Handling missing values
+print(f'Missing values in train data: {train_df.isnull().sum()}')
+
+# Check for duplicates
+print(f'Number of duplicated tweets: {train_df.duplicated().sum()}')
